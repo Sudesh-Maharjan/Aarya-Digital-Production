@@ -6,7 +6,7 @@ Photography Training
 
 @section('content')
 <div class="d-flex justify-content-center">
-<img src="images/Rectangle 11.png" alt="" class="cover">
+<img src="images/Rectangle 12.png" alt="" class="img-fluid">
 </div>
 <div class="mx-lg-5">
    <x-maintitle maintitle="Photography Training"/>
@@ -14,16 +14,12 @@ Photography Training
 </div>
 <x-getstartedproject/>
 <div class="mt-5">
-<x-trainingphotographydropdown/>
-<x-trainingphotographydropdown/>
-<x-trainingphotographydropdown/>
-<x-trainingphotographydropdown/>
-<x-trainingphotographydropdown/>
-<x-trainingphotographydropdown/>
-</div>
-<div class="mt-5">
 <x-photographycomponent />
 </div>
+<div class="mt-5">
+<x-trainingphotographydropdown />
+</div>
+
 <x-form/>
 
 @endsection

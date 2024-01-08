@@ -9,12 +9,14 @@ use Illuminate\View\Component;
 class trainingmaincard extends Component
 {
     public $trainingcardtitle;
+    public $urltraining;
     /**
      * Create a new component instance.
      */
-    public function __construct($trainingcardtitle)
+    public function __construct($trainingcardtitle, $urltraining)
     {
         $this->trainingcardtitle = $trainingcardtitle;
+        $this->urltraining = $urltraining;
     }
 
     /**

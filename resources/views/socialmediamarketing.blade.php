@@ -5,15 +5,15 @@ Social Media Marketing
 @endsection
 
 @section('content')
-<div class="d-flex justify-content-center">
-<img src="images/Rectangle 11.png" alt="" class="img-fluid">
+<div class="d-flex justify-content-center ">
+<img src="images/Rectangle 11.png" alt="" class="img-fluid w-100">
 </div>
-<div class="mx-lg-5">
+<div class="">
    <x-maintitle maintitle="Social Media Marketing"/>
 <x-titledesc titledesc="Social media marketing is an increasingly important component of modern business promotion strategies. With billions of people using social media platforms like Facebook, Twitter, and Instagram, businesses have an unprecedented opportunity to reach a large and engaged audience. Social media marketing involves using social media channels to promote products or services, build brand awareness, and engage with customers. By creating and sharing relevant and engaging content, businesses can attract followers and build a community around their brand. Social media marketing also enables businesses to target specific audiences based on demographics, interests, and behaviors, which helps to increase the effectiveness of their campaigns. Additionally, social media marketing provides businesses with valuable insights into customer preferences and behavior, which can be used to improve their products, services, and marketing strategies. Therefore, businesses that leverage social media marketing effectively are likely to gain a competitive edge and achieve sustainable growth in the long run."/>
 </div>
 <x-getstartedproject/>
-<h2 class="fw-bold text-center my-5">Advantage of Social Media Marketing (SMM) For Business Promotion</h2>
+<h2 class="fw-bold text-center m-5 text-black">Advantage of Social Media Marketing (SMM) For Business Promotion</h2>
 <div class="d-flex justify-content-center">
 <div class="w-50">
 <x-digitalmarketingadvantages point="Cost Effective" desc="Social media marketing is often more cost-effective than traditional marketing methods, as it eliminates the need for costly print, radio, or TV ads."/>

@@ -9,13 +9,15 @@ use Illuminate\View\Component;
 class dmerketingcomp extends Component
 {
     public $subtitle;
+    public $url;
     /**
      * Create a new component instance.
      */
-    public function __construct($subtitle)
+    public function __construct($subtitle, $url)
     {
         
     $this->subtitle = $subtitle;
+    $this->url = $url;
     }
 
     /**

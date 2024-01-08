@@ -34,16 +34,12 @@ ADP Training
         </div>
     </div>
 </div>
-
 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mx-lg-5 card1">
-<x-trainingmaincard trainingcardtitle="Photography Training"/>
-<x-trainingmaincard trainingcardtitle="Photoediting Training"/>
-<x-trainingmaincard trainingcardtitle="Videography Training"/>
-<x-trainingmaincard trainingcardtitle="Videoediting Training"/>
-<x-trainingmaincard trainingcardtitle="Full Multimedia Training"/>
-<x-trainingmaincard trainingcardtitle="Gpahic Design Training"/>
-<x-trainingmaincard trainingcardtitle="Digital Marketing Training"/>
-<x-trainingmaincard trainingcardtitle="Digital Marketing Training"/>
+<x-trainingmaincard trainingcardtitle="Photography Training" urltraining="{{url('trainingphotography')}}"/>
+<x-trainingmaincard trainingcardtitle="Photoediting Training" urltraining="{{url('trainingphotography')}}"/>
+<x-trainingmaincard trainingcardtitle="Videography Training"  urltraining="{{url('trainingphotography')}}"/>
+<x-trainingmaincard trainingcardtitle="Videoediting Training"  urltraining="{{url('trainingphotography')}}"/>
+<x-trainingmaincard trainingcardtitle="Full Multimedia Training" urltraining="{{url('trainingphotography')}}"/>
 </div>
 </div>
 <div class="mx-lg-5">
