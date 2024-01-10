@@ -6,7 +6,7 @@ Multimedia Production
 
 @section('content')
 <div class="d-flex justify-content-center">
-<img src="images/Rectangle 12.png" alt="" class="img-fluid">
+<img src="images/Rectangle 12.png" alt="" class="img-fluid w-100">
 </div>
 
 <div class=" container-fluid">
@@ -15,16 +15,21 @@ Multimedia Production
 </div>
 
 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 container-fluid justify-content-center align-content-center" >
-<x-dmerketingcomp subtitle="Animation" url="{{url('animation')}}"/>
-<x-dmerketingcomp subtitle="Photography" url="{{url('animation')}}"/>
-<x-dmerketingcomp subtitle="Videography" url="{{url('animation')}}"/>
-<x-dmerketingcomp subtitle="Songs"  url="{{url('animation')}}"/>
-<x-dmerketingcomp subtitle="Jingle" url="{{url('animation')}}" />
+   <div class="d-flex justify-content-center align-content-center">
+<x-dmerketingcomp subtitle="Animation" url="{{url('animation')}}"/></div>
+<div class="d-flex justify-content-center align-content-center">
+<x-dmerketingcomp subtitle="Photography" url="{{url('photography')}}"/></div>
+<div class="d-flex justify-content-center align-content-center">
+<x-dmerketingcomp subtitle="Videography" url="{{url('videography')}}"/></div>
+<div class="d-flex justify-content-center align-content-center">
+<x-dmerketingcomp subtitle="Songs"  url="{{url('animation')}}"/></div>
+<div class="d-flex justify-content-center align-content-center">
+<x-dmerketingcomp subtitle="Jingle" url="{{url('jingle')}}" /></div>
 </div>
 
 <x-getstartedproject/>
 
-<h2 class="fw-bold text-center my-5 text-dark container-fluid">Advantage of Multimedia Production For Business Promotion</h2>
+<h2 class="fw-bold text-center m-5 text-dark">Advantage of Multimedia Production For Business Promotion</h2>
 <div class="d-flex justify-content-center">
 <div class="w-50">
 <x-digitalmarketingadvantages point="Multimedia Production" desc="Multimedia content is more engaging and interactive than traditional text-based content, which can help businesses to attract and retain the attention of their target audience"/>
@@ -42,8 +47,8 @@ Multimedia Production
 <x-digitalmarketingadvantages point="Final output" desc="This involves delivering the final video output in the desired format, such as a digital file, DVD, or online video platform"/>
 </div>
 </div>
-<div class="d-flex justify-content-center">
-<img src="images/multimediaproduction.png" alt="" class="img-fluid">
+<div class="d-flex justify-content-center ">
+<img src="images/multimediaproduction.png" alt="" class="img-fluid cover w-50 h-50">
 </div>
 
 <div class="d-flex justify-content-center">

@@ -3,9 +3,8 @@
 @section('title')
 Search Engin Optimization
 @endsection
-
-
 @section('content')
+
 <div class="d-flex justify-content-center">
    <img src="images/Rectangle 11.png" alt="" class="img-fluid w-100">
 </div>
@@ -30,6 +29,8 @@ Search Engin Optimization
 <x-digitalmarketingadvantages point="Local" desc="SEO can help businesses to optimize their online presence for local search, which allows them to reach customers in their specific geographic area."/>
 </div>
 </div>
+
+<x-maintitle maintitle="Package"/>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
 <x-smcomponent/>
 <x-smcomponent/>

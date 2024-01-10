@@ -6,18 +6,18 @@ Email Marketing
 
 
 @section('content')
-<div class="container-fluid">
 <div class="d-flex justify-content-center">
-<img src="images/Rectangle 11.png" alt="" class="contain img-fluid">
+   <img src="images/Rectangle 11.png" alt="" class="img-fluid w-100">
 </div>
 </div>
 
-<div class="mx-lg-5">
+<div class="container-fluid">
+<div class="">
    <x-maintitle maintitle="Email Marketing"/>
 <x-titledesc titledesc="Email marketing provides businesses with a direct and cost-effective way to reach their target audience, with personalized and relevant content. It allows businesses to build relationships with their customers and nurture leads, which can lead to increased sales and revenue. Email marketing is highly targeted and allows businesses to segment their audience based on their interests, behavior, and demographics, leading to higher engagement rates and better results. It is also measurable, allowing businesses to track open rates, click-through rates, and conversion rates, and optimize their campaigns for better performance. Email marketing is scalable, allowing businesses to send targeted messages to their audience at any time, which can lead to increased brand awareness and customer loyalty."/>
 </div>
 <x-getstartedproject/>
-<h2 class="fw-bold text-center my-5 text-dark">Advantage of Email Marketing For Business Promotion</h2>
+<h2 class="fw-bold text-center m-5 text-dark">Advantage of Email Marketing For Business Promotion</h2>
 <div class="d-flex justify-content-center">
 <div class="w-50">
 <x-digitalmarketingadvantages point="Targeted marketing" desc="With email marketing, businesses can target specific segments of their audience with personalized messages, which can lead to higher engagement rates and better results."/>

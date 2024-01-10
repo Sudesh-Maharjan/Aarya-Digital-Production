@@ -6,18 +6,18 @@ Content Marketing
 
 
 @section('content')
-<div class="container-fluid">
 <div class="d-flex justify-content-center">
-<img src="images/Rectangle 11.png" alt="" class="contain img-fluid">
+   <img src="images/Rectangle 11.png" alt="" class="img-fluid w-100">
 </div>
 </div>
 
-<div class="mx-lg-5">
+<div class="container-fluid">
+<div class="">
    <x-maintitle maintitle="Content Marketing"/>
 <x-titledesc titledesc="Content marketing is a strategic approach to creating and sharing valuable, relevant, and consistent content to attract and retain a clearly defined audience and ultimately drive profitable customer action. By consistently creating and distributing high-quality content that resonates with your target audience, you can establish your business as a thought leader in your industry and build trust with potential customers. Effective content marketing can help you increase brand awareness, drive traffic to your website, generate leads, and ultimately boost your bottom line."/>
 </div>
 <x-getstartedproject/>
-<h2 class="fw-bold text-center my-5 text-dark">Advantage of Content Marketing For Business Promotion</h2>
+<h2 class="fw-bold text-center m-5 text-dark">Advantage of Content Marketing For Business Promotion</h2>
 <div class="d-flex justify-content-center">
 <div class="w-50">
 <x-digitalmarketingadvantages point="Increased visibility" desc="By creating quality content and promoting it strategically, businesses can increase their online visibility and attract more potential customers to their website."/>

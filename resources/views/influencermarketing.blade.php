@@ -6,18 +6,18 @@ Affiliate Marketing
 
 
 @section('content')
-<div class="container-fluid">
 <div class="d-flex justify-content-center">
-<img src="images/Rectangle 11.png" alt="" class="img-fluid">
+   <img src="images/Rectangle 11.png" alt="" class="img-fluid w-100">
 </div>
 </div>
 
-<div class="mx-lg-5">
+<div class="container-fluid">
+<div class="">
    <x-maintitle maintitle="Influencer Marketing"/>
 <x-titledesc titledesc="Affiliate marketing provides businesses with a performance-based marketing model that is highly targeted and cost-effective. By leveraging the reach of affiliates, businesses can increase their exposure and reach a wider audience, without wasting advertising spend. Affiliate marketing allows businesses to only pay for results, which can lead to a better return on investment (ROI) compared to traditional advertising methods. It also builds trust with potential customers by leveraging the credibility of affiliates, who are often experts or influencers in their niche. Affiliate marketing is easy to track and measure, allowing businesses to optimize their campaigns and scale them up or down as needed to meet their needs."/>
 </div>
 <x-getstartedproject/>
-<h2 class="fw-bold text-center my-5 text-dark">Advantage of Influencer Marketing For Business Promotion</h2>
+<h2 class="fw-bold text-center m-5 text-dark">Advantage of Influencer Marketing For Business Promotion</h2>
 <div class="d-flex justify-content-center">
 <div class="w-50">
 <x-digitalmarketingadvantages point="Increased reach" desc="AInfluencer marketing allows businesses to reach a wider audience by leveraging the reach of influencers. This can lead to increased exposure and potential customers."/>

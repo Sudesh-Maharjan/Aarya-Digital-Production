@@ -6,14 +6,14 @@ Photography
 
 @section('content')
 <div class="d-flex justify-content-center">
-<img src="images/Rectangle 11.png" alt="" class="img-fluid">
+<img src="images/Rectangle 13.png" alt="" class="img-fluid w-100">
 </div>
-<div class="mx-lg-5">
+<div class="">
    <x-maintitle maintitle="Photography"/>
 <x-titledesc titledesc="Photography plays a critical role in business growth as it helps companies to visually communicate their brand message, products, and services to potential customers. By using high-quality images in branding, product promotion, content marketing, e-commerce, and corporate events, businesses can improve customer engagement, increase sales, and establish a strong brand identity, ultimately leading to business growth"/>
 </div>
 <x-getstartedproject/>
-<h2 class="fw-bold text-center my-5">Advantage of Social Media Marketing (SMM) For Business Promotion</h2>
+<h2 class="fw-bold text-center m-5 text-dark">Advantage of Social Media Marketing (SMM) For Business Promotion</h2>
 <div class="d-flex justify-content-center">
 <div class="w-50">
 <x-digitalmarketingadvantages point="Branding" desc="Photography can help businesses to establish their brand identity by creating a visual language that resonates with their target audience. This includes using high-quality images on websites, social media, and marketing materials to showcase the company's products, services, and culture."/>
