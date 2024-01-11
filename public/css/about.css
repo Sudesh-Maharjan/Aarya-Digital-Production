@@ -1,0 +1,22 @@
+/* .slide-over {
+    position: absolute;
+    right: -50px; 
+    top: -100px;
+    z-index: 1;
+} */
+
+
+.position-relative img.position-absolute, .second-image {
+    width: 75%; /* Adjust the width as needed */
+}
+
+.image-border {
+    border: 8px solid rgb(255, 255, 255);
+}
+
+
+.dashed-line {
+    border-top: 3px dashed #000; /* Adjust color and thickness as needed */
+    width: 100%; /* Adjust width as needed */
+    height: 10px; /* No height for a line */
+}

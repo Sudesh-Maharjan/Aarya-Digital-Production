@@ -202,7 +202,7 @@
 			
 
 
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-12 col-lg-7 col-xl-8 d-flex">
 						  <div class="card radius-10 w-100">
 							<div class="card-header bg-transparent">
@@ -280,58 +280,8 @@
 								</div>
 							 </div>
 						   </div>
-						</div>
+						</div> -->
 			   
-						<div class="col-12 col-lg-5 col-xl-4 d-flex">
-							<div class="card w-100 radius-10">
-						     <div class="card-body">
-							  <div class="card radius-10 border shadow-none">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div>
-											<p class="mb-0 text-secondary">Total Likes</p>
-											<h4 class="my-1">45.6M</h4>
-											<p class="mb-0 font-13">+6.2% from last week</p>
-										</div>
-										<div class="widgets-icons-2 bg-gradient-cosmic text-white ms-auto"><i class='bx bxs-heart-circle'></i>
-										</div>
-									</div>
-								</div>
-							 </div>
-							 <div class="card radius-10 border shadow-none">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div>
-											<p class="mb-0 text-secondary">Comments</p>
-											<h4 class="my-1">25.6K</h4>
-											<p class="mb-0 font-13">+3.7% from last week</p>
-										</div>
-										<div class="widgets-icons-2 bg-gradient-ibiza text-white ms-auto"><i class='bx bxs-comment-detail'></i>
-										</div>
-									</div>
-								</div>
-							 </div>
-							 <div class="card radius-10 mb-0 border shadow-none">
-								<div class="card-body">
-									<div class="d-flex align-items-center">
-										<div>
-											<p class="mb-0 text-secondary">Total Shares</p>
-											<h4 class="my-1">85.4M</h4>
-											<p class="mb-0 font-13">+4.6% from last week</p>
-										</div>
-										<div class="widgets-icons-2 bg-gradient-moonlit text-white ms-auto"><i class='bx bxs-share-alt'></i>
-										</div>
-									</div>
-								</div>
-							  </div>
-							 </div>
-
-							</div>
-			   
-						</div>
-					 </div><!--end row-->
-
-					 <div class="row row-cols-1 row-cols-lg-3">
 						 <div class="col d-flex">
                            <div class="card radius-10 w-100">
 							   <div class="card-body">

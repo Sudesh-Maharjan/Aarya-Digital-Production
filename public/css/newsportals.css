@@ -1,0 +1,16 @@
+.youtube-card {
+    height: 300px;
+    overflow: hidden; /* This ensures the image doesn't overflow the card on zoom */
+    border: none;
+}
+
+.youtube-card:hover{
+    border: 1px solid red;
+}
+
+.youtube-image{
+    height: 150px;
+    object-fit: cover;
+}
+
+

@@ -1,0 +1,15 @@
+.zoom-card {
+    overflow: hidden; /* This ensures the image doesn't overflow the card on zoom */
+}
+
+.zoom-card .event-image {
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+.event-image{
+    height: 250px;
+}
+
+.event-image-wrapper:hover .event-image {
+    transform: scale(1.05); /* Scale the image up to 110% when hovering over the card */
+}

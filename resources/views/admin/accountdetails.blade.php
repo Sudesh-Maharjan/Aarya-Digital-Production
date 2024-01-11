@@ -1,4 +1,9 @@
 @extends('admin/layout')
+<style>
+   .form-select {
+      border: none;
+   }
+</style>
 @section('content')
    <!--start page wrapper -->
    <div class="page-wrapper bg-white">
@@ -13,7 +18,6 @@
          <div class="container">
             <div class="main-body">
                <div class="row">
-
                   <div class="col-lg-8">
                      <div class=" d-flex justify-content-center gap-4">
                         <div class="w-50">
@@ -23,7 +27,7 @@
                                     <h6 class="mb-0">Full Name</h6>
                                  </div>
                                  <div class="col-sm-9 text-secondary mt-2">
-                                    <input type="text" class="form-control" value="Full Name" />
+                                    <input type="text" class="form-control" placeholder="Full Name" />
                                  </div>
                               </div>
 
@@ -32,7 +36,7 @@
                                     <h6 class="mb-0">Contact No.</h6>
                                  </div>
                                  <div class="col-sm-9 text-secondary mt-2">
-                                    <input type="text" class="form-control" value="(239) 816-9029" />
+                                    <input type="text" class="form-control" placeholder="(977) 9861611523" />
                                  </div>
                               </div>
 
@@ -40,14 +44,14 @@
                                  <div class="col-sm-3 ">
                                     <h6 class="mb-0">Birthday</h6>
                                  </div>
-                                 <div class="row-sm-9 text-secondary mt-2">
+                                 <div class=" text-secondary mt-2 d-flex gap-2">
                                     <select class="form-select mb-3" aria-label="Default select example">
                                        <option selected>Month</option>
                                        <option value="1">One</option>
                                        <option value="2">Two</option>
                                        <option value="3">Three</option>
                                     </select>
-                                    <select class="form-select mb-3" aria-label="Default select example">
+                                    <select class="form-select  mb-3" aria-label="Default select example">
                                        <option selected>Day</option>
                                        <option value="1">One</option>
                                        <option value="2">Two</option>
@@ -70,7 +74,7 @@
                                  <h6 class="mb-0">Email</h6>
                               </div>
                               <div class="col-sm-9 text-secondary mt-2">
-                                 <input type="text" class="form-control" value="john@example.com" />
+                                 <input type="text" class="form-control" placeholder="john@example.com" />
                               </div>
                            </div>
 
@@ -79,7 +83,7 @@
                                  <h6 class="mb-0">Password</h6>
                               </div>
                               <div class="col-sm-9 text-secondary mt-2">
-                                 <input type="password" class="form-control" value="" />
+                                 <input type="password" class="form-control" placeholder="" />
                               </div>
                            </div>
                            <div class="col mb-3  mt-5">
@@ -87,23 +91,14 @@
                                  <h6 class="mb-0">Gender</h6>
                               </div>
                               <div class="form-check">
-                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                 <label class="form-check-label" for="flexRadioDefault2">Male</label>
+                              <select class="form-select mb-3 w-50 mt-3" aria-label="Default select example">
+                                       <option selected>Select</option>
+                                       <option value="1">Male</option>
+                                       <option value="2">Female</option>
+                                       <option value="3">Others</option>
+                                    </select>
 
 
-                              </div>
-                              <div class="form-check">
-                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                 <label class="form-check-label" for="flexRadioDefault2">Female</label>
-
-                              </div>
-                              <div class="form-check">
-
-                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                 <label class="form-check-label" for="flexRadioDefault2">Other</label>
                               </div>
                            </div>
                         </div>
@@ -118,7 +113,7 @@
                                     <h6 class="mb-0">Address</h6>
                                  </div>
                                  <div class="col-sm-9 text-secondary mt-2">
-                                    <input type="text" class="form-control" value="Address" />
+                                    <input type="text" class="form-control" placeholder="Address" />
                                  </div>
                               </div>
 
@@ -156,7 +151,7 @@
                                     <h6 class="mb-0">Landmark(Optional)</h6>
                                  </div>
                                  <div class="col-sm-9 text-secondary mt-2">
-                                    <input type="text" class="form-control" value="" />
+                                    <input type="text" class="form-control" placeholder="" />
                                  </div>
                               </div>
                </div>

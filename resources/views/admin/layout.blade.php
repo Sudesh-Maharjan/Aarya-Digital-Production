@@ -349,14 +349,12 @@
 							</li>
 							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-home-circle'></i><span>Dashboard</span></a>
 							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-dollar-circle'></i><span>Earnings</span></a>
-							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-download'></i><span>Downloads</span></a>
-							</li>
+							
+						
 							<li>
 								<div class="dropdown-divider mb-0"></div>
 							</li>
-							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							<li><a class="dropdown-item" href="javascript:;" onclick="confirmLogout()"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
 							</li>
 						</ul>
 					</div>
@@ -369,4 +367,13 @@
 
 </body>
 
+<script>
+	function confirmLogout() {
+		var confirmLogout = confirm("Do you want to logout?");
+		if (confirmLogout) {
+			window.location.href = "{{ url('/') }}";
+		} else {
+		}
+	}
+</script>
 </html>

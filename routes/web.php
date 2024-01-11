@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\NewsportalController;
+use App\Http\Controllers\PodcastController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\YoutubeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +27,15 @@ Route::get('/admin/packagedetails', function () {
 });
 Route::get('/admin/accountdetails', function () {
     return view('admin/accountdetails');
+});
+Route::get('/admin/mycart', function () {
+    return view('admin/mycart');
+});
+Route::get('/admin/mycartinside', function () {
+    return view('admin/mycartinside');
+});
+Route::get('/admin/checkout', function () {
+    return view('admin/checkout');
 });
 
 
@@ -94,3 +109,19 @@ Route::get('/trainingphotography', function () {
 
 
 
+//suwas
+Route::get('/events', [EventController::class, 'showEvents']);
+Route::get('/blogs', [BlogController::class, 'showBlogs']);
+Route::get('/youtubes', [YoutubeController::class, 'showYoutubes']);
+Route::get('/podcasts', [PodcastController::class, 'showPodcasts']);
+Route::get('/newsportals', [NewsportalController::class, 'showNewsportals']);
+Route::get('/about', [TeamController::class, 'about']);
+Route::get('/eventdetails', function () {
+    return view('eventdetails');
+});
+Route::get('/blogdetails', function () {
+    return view('blogsdetails');
+});
+Route::get('/newsportaldetails', function () {
+    return view('newsportaldetails');
+});
