@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EventController extends Controller
 {
@@ -11,62 +13,96 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function adminshowevent()
+{
+    $events = Event::all();
+    return view('admin.events.ShowEvent', compact('events'));
+}
+    public function admincreate()
+    {
+        return view('admin.events.CreateEvent');
+    }
+    public function store(Request $request)
+    {
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
+        $imagePath = $request->file('image')->store('event_images', 'public');
+        $imageName = basename($imagePath);
+
+        Event::create([
+            'image' => $imageName,
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+        ]);
+
+        return redirect()->route('admin.events.createevent')->with('success', 'Event created successfully');
+    }
     public function showEvents()
     {
         // Mock data for events
-        $events = [
-            [
-                'id' => 1,
-                'image_url' => 'https://media.vanityfair.com/photos/59511b926938fe2d736d72cd/16:9/w_1280,c_limit/one-direction-reunion-niall-horan-liam-payne.jpg',
-                'month' => 'JAN',
-                'day' => '20',
-                'title' => 'Wonder Girls 2010 Wonder Girls World Tour San Francisco',
-                'description' => 'We will get you directly seated and inside for you to enjoy the show.'
-            ],
-            [
-                'id' => 2,
-                'image_url' => 'https://media.assettype.com/filmcompanion%2F2023-11%2Fb9b403e1-f078-4758-acf8-4d2d1e660f8a%2FErasTour_Lead.jpg?auto=format%2Ccompress&fit=max&w=1200',
-                'month' => 'FEB',
-                'day' => '15',
-                'title' => 'JYJ 2011 JYJ Worldwide Concert Barcelona',
-                'description' => 'Directly seated and inside for you to enjoy the show.'
-            ],
-            [
-                'id' => 3,
-                'image_url' => 'https://media.wnyc.org/i/700/466/c/80/photologue/photos/LSO-bean.jpg',
-                'month' => 'MAY',
-                'day' => '15',
-                'title' => 'JYJ 2011 JYJ Worldwide Concert Barcelona',
-                'description' => 'Directly seated and inside for you to enjoy the show.'
-            ],
-            [
-                'id' => 4,
-                'image_url' => 'https://audacyinc.com/wp-content/uploads/2021/11/header-events-page.jpg',
-                'month' => 'JUL',
-                'day' => '15',
-                'title' => 'JYJ 2011 JYJ Worldwide Concert Barcelona',
-                'description' => 'Directly seated and inside for you to enjoy the show.'
-            ],
-            [
-                'id' => 5,
-                'image_url' => 'https://media.assettype.com/knocksense%2F2023-03%2F273084d5-7f21-4941-b6b3-68ada6bf9c35%2Fmaxresdefault__3_.jpg?rect=0%2C0%2C1280%2C720',
-                'month' => 'SEP',
-                'day' => '17',
-                'title' => 'JYJ 2011 JYJ Worldwide Concert Barcelona',
-                'description' => 'Directly seated and inside for you to enjoy the show.'
-            ],
-            [
-                'id' => 6,
-                'image_url' => 'https://cdn.visitmusiccity.com/cdn/ff/WyUQ2fToB_u6c_uUNUPfiylu-hDXHFC8P0z7rwhUwB0/1670515183/public/2022-12/Sheraton%20Grand%20Nashville%20Downtown%20Earth%20%20Wind-1200x689-1a6d737.jpg',
-                'month' => 'AUG',
-                'day' => '15',
-                'title' => 'JYJ 2011 JYJ Worldwide Concert Barcelona',
-                'description' => 'Directly seated and inside for you to enjoy the show.'
-            ],
-       
-        ];
+        $events = Event::all();
 
         // Pass the events data to the view
         return view('events', ['events' => $events]);
+    }
+    public function showEventDetails($id)
+    {
+      
+        $event = Event::find($id);
+    
+      
+        if (!$event) {
+            abort(404); 
+        }
+    
+       
+        return view('eventdetails', ['event' => $event]);
+    }
+    public function edit($id)
+    {
+        $event = Event::find($id);
+
+        if (!$event) {
+            abort(404); 
+        }
+
+        return view('admin.events.EditEvent', compact('event'));
+    }
+
+ function update(Request $request, $id)
+    {
+        $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
+        $event = Event::find($id);
+
+        if (!$event) {
+            abort(404);
+        }
+
+        // Update event details
+        $event->title = $request->input('title');
+        $event->description = $request->input('description');
+
+        // Update image if a new image is provided
+        if ($request->hasFile('image')) {
+            // Delete old image
+            Storage::disk('public')->delete('event_images/' . $event->image);
+
+            // Store new image
+            $imagePath = $request->file('image')->store('event_images', 'public');
+            $event->image = basename($imagePath);
+        }
+
+        $event->save();
+
+        return redirect()->route('admin.events.showevent')->with('success', 'Event updated successfully');
     }
 }

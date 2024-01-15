@@ -8,14 +8,19 @@ use Illuminate\View\Component;
 
 class EventImageContent extends Component
 {
+   
+    public $description;
+    public $image;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct( $description, $image)
     {
-        //
+        
+        $this->description = $description;
+        $this->image = $image;
     }
-
     /**
      * Get the view / contents that represent the component.
      */

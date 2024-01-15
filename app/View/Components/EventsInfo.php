@@ -8,12 +8,10 @@ use Illuminate\View\Component;
 
 class EventsInfo extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+    public $date;
+    public function __construct($date)
     {
-        //
+        $this->date = $date;
     }
 
     /**

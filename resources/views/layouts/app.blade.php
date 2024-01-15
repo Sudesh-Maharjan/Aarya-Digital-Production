@@ -27,9 +27,9 @@ margin: 0;
 
 <body>
    <!-- Nav Bar -->
-   <header class="sticky-top container-fluid">
+   <header class="sticky-top w-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
+        <div class="container-fluid w-100">
             <a class="navbar-brand text-white d-flex" href="/">
                 <img src="images/adplogo.png" alt="" class="logo">
                 <div class="">

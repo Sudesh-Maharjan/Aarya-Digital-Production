@@ -8,11 +8,13 @@ Event Details
             <div class="row gx-0 gx-lg-5">
               <div class=" col-12 col-lg-9 ">
                <div class="p-2 p-lg-5 text-start"   style="background-color: #fff">
-                    <h4 class="fw-bold">ADP Hosts Insightful Guest Lecture on Photography</h4>
+                    <h4 class="fw-bold">{{$event->title}}</h4>
                   
-                    <x-events-info/>
+                    <x-events-info :date="$event->updated_at"/>
 
-                    <x-event-image-content/>
+                    <x-event-image-content 
+                    :description="$event->description"
+            :image=" $event->image"/>
             
                {{-- share --}}
 

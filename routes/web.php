@@ -108,6 +108,10 @@ Route::get('/trainingphotography', function () {
 //Trainings end
 
 
+// admin events
+Route::get('admin/events/createevent', [EventController::class, 'admincreate'])->name('admin.events.createevent');
+Route::get('admin/events/showevent', [EventController::class, 'adminshowevent'])->name('admin.events.adminshowevent');
+Route::post('admin/events/storeevent', [EventController::class, 'store'])->name('admin.events.store');
 
 //suwas
 Route::get('/events', [EventController::class, 'showEvents']);
@@ -116,9 +120,8 @@ Route::get('/youtubes', [YoutubeController::class, 'showYoutubes']);
 Route::get('/podcasts', [PodcastController::class, 'showPodcasts']);
 Route::get('/newsportals', [NewsportalController::class, 'showNewsportals']);
 Route::get('/about', [TeamController::class, 'about']);
-Route::get('/eventdetails', function () {
-    return view('eventdetails');
-});
+Route::get('/events/{id}', [EventController::class,'showEventDetails']);
+
 Route::get('/blogdetails', function () {
     return view('blogsdetails');
 });

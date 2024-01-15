@@ -2,7 +2,8 @@
     <a href="/events/{{ $event['id'] }}" class="text-decoration-none">
         <div class="card rounded-4 zoom-card">
             <div class="event-image-wrapper">
-                <img src="{{ $event['image_url'] }}" class="event-image card-img-top rounded-top-4" alt="image">
+              
+                <img src="{{ asset('storage/event_images/' . $event->image) }}" class="event-image card-img-top rounded-top-4" alt="image" height="350">
             </div>
             
             <div class="card-body">
@@ -11,8 +12,8 @@
                    <span class="fs-6" style="color: #F23E1B">{{ $event['month'] }}</span>  <br/> <span class="fs-2 fw-bold">{{ $event['day'] }}</span>
                 </div>
                 <div class="col-9 col-lg-10">
-                    <h5 class="fw-bold">{{ $event['title'] }}</h5>
-                    <p>{{ $event['description'] }}</p>
+                    <h5 class="fw-bold text-truncate">{{ $event['title'] }}</h5>
+                    <p class="text-truncate">{{ $event['description'] }}</p>
                 </div>
               </div>
             </div>
